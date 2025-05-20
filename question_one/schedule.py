@@ -1,18 +1,20 @@
 from operator import itemgetter
 
 def scheduling(tasks):
+    new_task = {}
+    tasks.append(new_task)
     for task in tasks:
-        print(sorted(tasks, key = lambda x : x['deadline'] ))
+        print(sorted(tasks, key =lambda task: list(task.values())))
         
 
-        
+      
 
 
 
 tasks = [
-    {'taskname':'cleaning','deadline':1400},
-    {'taskname':'NYJ','deadline':1800},
-    {'taskname':'DAS','deadline':1200}
+    {'cleaning':1400},
+    {'taskname':1800},
+    {'taskname':1200}
 ]
 
 
